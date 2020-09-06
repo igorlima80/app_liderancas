@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533099045961",
+    "firebase_url": "https://liderancas.firebaseio.com",
+    "project_id": "liderancas",
+    "storage_bucket": "liderancas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533099045961:android:bd0fe775befef596a20b98",
+        "android_client_info": {
+          "package_name": "br.net.liderancas.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533099045961-9i6j8gv2fehq6jfvrvj04f84bc0nvd0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL26JbEIbA50ugs5SXAik6j1pmtdY5BJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533099045961-9i6j8gv2fehq6jfvrvj04f84bc0nvd0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

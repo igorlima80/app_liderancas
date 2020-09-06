@@ -1,0 +1,159 @@
+GET http://app.liderancas.net.br/api/leaders/1 HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://app.liderancas.net.br/api/leaders/login HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "007.711.733-69"
+}
+###
+GET http://app.liderancas.net.br/api/leaders/1/members HTTP/1.1
+content-type: application/json
+
+###
+# Alterar Lider
+
+PUT http://app.liderancas.net.br/api/leaders/1 HTTP/1.1
+content-type: application/json
+
+{
+    "address": {
+        "description": "Casa",
+        "number": "",
+        "complement": "",
+        "zipcode": "64000-830",
+        "district": "Marques",
+        "street": "",
+        "city_id": "3286"
+    }
+}
+
+###
+# Método para buscar os membros pŕoximos não visitados
+
+POST http://app.liderancas.net.br/api/members/find_unvisited HTTP/1.1
+content-type: application/json
+
+{
+ "id":1,	
+ "latitude": -5.0792706, 
+ "longitude": -42.8137769,
+ "radius": 3
+}
+###
+# Método para buscar os membros pŕoximos, independente de status
+
+POST http://app.liderancas.net.br/api/members/find HTTP/1.1
+content-type: application/json
+
+{
+ "id":1,	
+ "latitude": -5.0814557, 
+ "longitude": -42.7995088,
+ "radius": 3
+}
+
+###
+# cadastro de visitas:
+
+POST http://app.liderancas.net.br/api/visits HTTP/1.1
+content-type: application/json
+
+{
+	"visit":{
+		"date_visit":"2019-10-27",
+		"observation":"testeeee2",
+		"number_of_voters": 4,
+		"member_id": 6
+	}
+}
+
+###
+# Detalhes de um membro:
+GET http://app.liderancas.net.br/api/members/1 HTTP/1.1
+content-type: application/json
+
+###
+# Visita por membros
+
+POST http://app.liderancas.net.br/api/visits/find_by_member HTTP/1.1
+content-type: application/json
+
+{
+	"id": 2
+}
+
+###
+
+POST http://app.liderancas.net.br/api/cities/find HTTP/1.1
+content-type: application/json
+
+{
+	"description":"teres"
+}
+
+###
+
+POST http://app.liderancas.net.br/api/utils/zipcode HTTP/1.1
+content-type: application/json
+
+{
+	"zipcode":"64057-650"
+}
+
+###
+
+POST http://app.liderancas.net.br/api/cities/find_by_ibge HTTP/1.1
+content-type: application/json
+
+{
+	"ibge": "2211001"
+}
+
+###
+POST http://app.liderancas.net.br/api/members HTTP/1.1
+content-type: application/json
+
+{
+    "member":{
+        "name": "testando com address 55555",
+        "cpf": "221.231.223-25",
+        "birthdate": "23/02/1981",
+        "leader_id": 1,
+        "address":{
+            "description": "trabalho",
+            "zipcode": "64057-650",
+            "street": "rua professora",
+            "number": 6990,
+            "complement": "bloco",
+            "district": "retorno do cep",
+            "city_id": 3286
+        }
+    }
+}
+
+###
+
+PUT http://app.liderancas.net.br/api/members/32 HTTP/1.1
+content-type: application/json
+
+{
+    "member":{
+        "name": "jose",
+        "cpf": "846.644.665-55",
+        "birthdate": "23/02/1981",
+        "leader_id": 1,
+        "address":{
+            "description": "trabalho",
+            "zipcode": "64057-650",
+            "street": "rua professora",
+            "number": 6990,
+            "complement": "bloco",
+            "district": "retorno do cep",
+            "city_id": 3286
+        }
+    }
+}

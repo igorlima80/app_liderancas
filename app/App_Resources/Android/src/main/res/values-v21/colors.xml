@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="ns_accent">#4CB3A4</color>
+	<color name="ucrop_color_toolbar">#417169</color>
+	<color name="ucrop_color_statusbar">#417169</color>
+</resources>
